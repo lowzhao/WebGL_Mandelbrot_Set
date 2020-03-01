@@ -3,6 +3,8 @@ var scale = 1.0;
 var go_up_by = 0.0;
 var go_right_by = -1.0;
 
+var dont_change = false;
+
 var vertex_shader_src = `
 attribute vec2 vert_pos;
 attribute vec3 vert_color;
