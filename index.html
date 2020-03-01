@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<script src='./js/mat.js'></script>
+	<script src='./js/utils.js'></script>
+	<script src='./js/html_scripts.js'></script>
+	<script src='./js/script.js'></script>
+
+	<style>
+	*{
+		margin: 0;	
+		padding: 0;
+		border: 0px;
+		font-family: sans-serif;
+		font-size: 13px;
+		text-align: center;
+	}
+	html, body{
+		width: 100vw;
+		height:100vh;
+	}
+	#button_holder{
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		color: white;
+
+		z-index: 999;
+	}
+	#button_holder > button{
+		padding:8px;
+		margin-left: 20px;
+		background-color: black;
+		color: white;
+	}
+	</style>
+</head>
+<body style='margin:0; padding:0;border:0px;'>
+	<canvas id="can"></canvas>
+	<div id='button_holder'>
+		<button onclick="document.fullscreenElement? document.exitFullscreen():document.querySelector('body').requestFullscreen() ">TOOGLE FULLSCREEN</button>
+		<button onclick="clearWhite()">Go White</button>
+		<button onclick="clearBlack()">Go Black</button>
+	</div>
+</body>
+</html>
